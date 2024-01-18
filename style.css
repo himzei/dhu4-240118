@@ -10,6 +10,38 @@
 /* header */
 header{
     width: 100%; 
-    height: 60px; 
-    background-color: red;
+    height: 80px; 
+    display: flex; 
+    justify-content: center;
+}
+.inner-container {
+    width: 1300px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-box{
+    display: flex;
+    gap: 10px;
+}
+.logo-box h1 {
+    color: darkorange;
+    text-transform: uppercase
+}
+.logo-image {
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;
+    background-color: darkorange;
+}
+header nav {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+header nav span:last-child{
+    background-color: darkorange;
+    padding: 14px 20px; 
+    color: white;
+    border-radius: 10px; 
 }
