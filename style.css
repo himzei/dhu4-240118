@@ -9,10 +9,12 @@
 
 /* header */
 header{
+    position: fixed;
     width: 100%; 
     height: 80px; 
     display: flex; 
     justify-content: center;
+    align-items: center;
 }
 .inner-container {
     width: 1300px; 
@@ -38,10 +40,128 @@ header nav {
     display: flex;
     gap: 48px;
     align-items: center;
+    color: white;
 }
 header nav span:last-child{
     background-color: darkorange;
     padding: 14px 20px; 
     color: white;
     border-radius: 10px; 
+}
+.mob-menu {
+    display: none; 
+    
+}
+
+/* 메인 */
+.main {
+    width: 100%;
+    height: 550px; 
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.main-container {
+    width: 1300px;
+    height: 85%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+.main-left{
+    color: white;
+}
+.main-left h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.main-left p {
+    width: 500px;
+    line-height: 1.6rem;
+    margin: 24px 0
+}
+.main-left div {
+    display: inline-block;
+    padding: 16px 30px; 
+    color: white; 
+    background-color: darkorange;
+    border-radius: 10px; 
+    margin: 10px 0;
+}
+.main-right{
+    width: 500px; 
+    height: 300px; 
+    /* background-color: red; */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px; 
+}
+.main-right_slide {
+    width: 300px; 
+    height: 100px; 
+    border-radius: 10px; 
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.main-right_button {
+    display: flex;
+    gap: 60px;
+}
+.main-right_button div {
+    width: 40px; 
+    height: 40px; 
+    background-color: darkorange;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 680px){
+    /* 헤더 */
+    .inner-container {
+        width: 100%; 
+        align-items: center;
+    }
+    .inner-container nav {
+        display: none; 
+    }
+    .mob-menu {
+        color: darkorange; 
+        width: 60px; 
+        height: 60px; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        font-size: 40px; 
+    }
+
+    /* 메인섹션 */
+    .main {
+        height: auto; 
+    }
+    .main-container {
+        width: 100%; 
+        flex-direction: column;
+        padding: 80px 0; 
+    }
+    .main-left h2 {
+        width: 100%; 
+        text-align: center; 
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .main-left p {
+        text-align: center; 
+        width: 100%;
+        line-height: 1.6rem;
+        margin: 18px 0
+    }
 }
